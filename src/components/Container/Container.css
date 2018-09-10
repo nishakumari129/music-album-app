@@ -1,0 +1,84 @@
+
+.detailCard {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: #D5DBDB; 
+    margin-bottom: 20px; 
+}
+
+.cardWrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.imageWrapper {
+    width: 120px;
+    padding-right: 40px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.artistName,
+.genre {
+    color: #2980B9;
+    font-size: 15px;
+}
+
+.artistTitle,
+.categoryTitle {
+    font-size: 16px;
+}
+
+.detailWrapper{
+width: calc(100% - 160px);
+justify-content: space-between;
+flex-direction: column;
+display: flex;
+}
+
+.loader {
+    border: 4px solid #CACFD2;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+}
+
+.showMoreLink {
+    text-decoration: none;
+    color: #2980B9;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.title {
+    font-size: 18px;
+    color: #1B4F72;
+    font-weight: 600;
+}
+
+.loaderWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.loadingStatus {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
